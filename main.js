@@ -10,13 +10,12 @@ let counter = 0;
 function markAllAsRead(){
     markRead.addEventListener('click', () => {
         for(let i = 0; i < notification.length; i++){
-        if(notification[i].classList.contains('unread')){
-            notification[i].classList.remove('unread');
-            amount.textContent = "0";
+            if(notification[i].classList.contains('unread')){
+                notification[i].classList.remove('unread');
+                amount.textContent = "0";
+            }
         }
-    }
     });
-    
 }
 
 function markAsRead(){

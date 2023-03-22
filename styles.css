@@ -113,6 +113,7 @@ a {
     box-sizing: border-box;
     border: 1px solid #DDE7EE;
     margin-top: 12px;
+    border-radius: 5px;
 }
 
 .unread{
@@ -128,6 +129,90 @@ a {
 
 .content{
     display: flex;
-    align-items: end;
+    align-items: center;
     gap: 6px;
+}
+
+.chess-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (min-width: 1024px){
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F9FAFD;
+    }
+
+    main{
+        width: 730px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+    }
+    
+    .header{
+        padding: 32px;
+    }
+
+    .container{
+        padding: 0 16px;
+    }
+
+    .notification {
+        gap: 19px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .mark-read {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .message{
+        max-width: 566px;
+        padding: 17px 20px 20px 20px;
+        box-sizing: border-box;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    .message:hover{
+        background-color: #E5EFFA;
+    }
+
+    .mark-read:hover{
+        cursor: pointer;
+        color: #0A327B;
+    }
+
+    a:hover{
+        color: #0A327B;
+        cursor: pointer;
+
+    }
+
+    .chess-container img:hover{
+        cursor: pointer;
+    }
+
+    .name:hover{
+        color:#0A327B;
+        cursor: pointer;
+    }
+
 }
