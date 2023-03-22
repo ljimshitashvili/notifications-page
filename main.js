@@ -18,6 +18,8 @@ function markAllAsRead(){
     });
 }
 
+
+//This function removes 'unread' for each notification.
 function markAsRead(){
     countUnreads();
     amount.textContent = counter;
@@ -44,6 +46,8 @@ function countUnreads(){
     } 
 }
 
+
+// ENGINE
 
 markAllAsRead();
 markAsRead();
